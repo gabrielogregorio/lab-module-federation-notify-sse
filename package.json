@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "__build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "static": "yarn __build && next export"
   },
   "dependencies": {
     "@module-federation/nextjs-mf": "^6.0.7",
