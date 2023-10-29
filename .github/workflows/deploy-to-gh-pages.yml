@@ -35,6 +35,6 @@ jobs:
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/gabrielogregorio/lab-module-federation-notify-sse.git
 
           echo "deploy do gh pages"
-          npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
+          npx gh-pages -d out -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
