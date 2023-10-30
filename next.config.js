@@ -1,10 +1,20 @@
 /** @type {import('next').NextConfig} */
 const NextFederationPlugin = require("@module-federation/nextjs-mf");
 
+
 module.exports = {
-  webpack(config, options) {
+  webpack(configOriginal, options) {
+    const config = { ...configOriginal }
+
     Object.assign(config.experiments, { topLevelAwait: true });
+    config.module.rules.push(
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      })
+
     if (!options.isServer) {
+
       // config.cache = false;
 
       config.plugins.push(
@@ -14,11 +24,7 @@ module.exports = {
           exposes: {
             "./component/Notify": "./src/pages/index.tsx",
           },
-
-          shared: {
-         
-          
-          },
+          shared: {},
         })
       );
     }
