@@ -20,11 +20,13 @@ export function Notify({ user }: Props) {
                 return (
                   <li
                     key={notifyItem.id}
-                    className="border-l-2 border-gray-500 min-h-[2rem] block px-3"
+                    className="border-l-2 border-black hover:border-l-8 min-h-[2rem] block px-3 group transition-all duration-700 hover:duration-150"
                   >
                     <div>
-                      <h3 className="font-bold">{notifyItem.title}</h3>
-                      <p>{notifyItem.content}</p>
+                      <h3 className="font-bold text-gray-700">
+                        {notifyItem.title}
+                      </h3>
+                      <p className="text-gray-500">{notifyItem.content}</p>
                     </div>
                   </li>
                 );

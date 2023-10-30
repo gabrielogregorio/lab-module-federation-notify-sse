@@ -15,8 +15,6 @@ module.exports = {
 
     if (!options.isServer) {
 
-      // config.cache = false;
-
       config.plugins.push(
         new NextFederationPlugin({
           name: "notify",
