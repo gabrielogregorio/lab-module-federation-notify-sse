@@ -10,23 +10,23 @@
     "static": "yarn build && next export"
   },
   "dependencies": {
-    "@module-federation/nextjs-mf": "^6.0.7",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "8.33.0",
-    "eslint-config-next": "13.1.6",
     "next": "13.1.6",
-    "postcss": "^8",
+    "@module-federation/nextjs-mf": "^6.0.7",
+    "autoprefixer": "^10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss": "^3",
-    "typescript": "4.9.5",
-    "webpack": "5"
+    "tailwindcss": "^3"
   },
   "devDependencies": {
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "postcss": "^8",
+    "typescript": "4.9.5",
+    "webpack": "5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "mini-css-extract-plugin": "^2.7.6"
   }
 }
