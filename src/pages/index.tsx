@@ -1,5 +1,8 @@
-import { Notify } from "@/components/Notify";
+import { Notify as NotifyBase } from "../components/Notify";
 
-export default function Home() {
-  return <Notify />;
+
+export const Notify = NotifyBase;
+
+export default function Test() {
+  return <div></div>;
 }

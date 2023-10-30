@@ -1,0 +1,1 @@
+https://lab-module-federation-notify-sse.vercel.app/
